@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0493640629884E1A001ED997 /* FetchErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493640529884E1A001ED997 /* FetchErrors.swift */; };
+		04A07CC529812E0100E347CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07CC429812E0100E347CD /* AppDelegate.swift */; };
+		04A07CC729812E0100E347CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07CC629812E0100E347CD /* SceneDelegate.swift */; };
+		04A07CCF29812E0200E347CD /* DejavooNotesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04A07CCD29812E0200E347CD /* DejavooNotesApp.xcdatamodeld */; };
+		04A07CD129812E0700E347CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A07CD029812E0700E347CD /* Assets.xcassets */; };
+		04A07CD429812E0700E347CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A07CD229812E0700E347CD /* LaunchScreen.storyboard */; };
+		04A07CF529828C4500E347CD /* TasksAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07CE929828C4500E347CD /* TasksAssembly.swift */; };
+		04A07CF629828C4500E347CD /* TasksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07CEB29828C4500E347CD /* TasksPresenter.swift */; };
+		04A07CF729828C4500E347CD /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07CED29828C4500E347CD /* TasksViewController.swift */; };
+		04A07CF829828C4500E347CD /* TasksViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07CEE29828C4500E347CD /* TasksViewInterface.swift */; };
+		04A07D04298291D700E347CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04A07D06298291D700E347CD /* Localizable.strings */; };
+		04A07EB729829EBF00E347CD /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07EB629829EBF00E347CD /* TaskCell.swift */; };
+		04A07EBA2982A0FE00E347CD /* CGFloat+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07EB92982A0FE00E347CD /* CGFloat+Ext.swift */; };
+		04A07EBC2982A6EC00E347CD /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07EBB2982A6EC00E347CD /* UIColor+Ext.swift */; };
+		04A07EBF2982A96E00E347CD /* CellsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07EBE2982A96E00E347CD /* CellsDelegate.swift */; };
+		04A07EDB2982BF0F00E347CD /* MainListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07ECF2982BF0F00E347CD /* MainListAssembly.swift */; };
+		04A07EDC2982BF0F00E347CD /* MainListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07ED12982BF0F00E347CD /* MainListPresenter.swift */; };
+		04A07EDD2982BF0F00E347CD /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07ED32982BF0F00E347CD /* MainListViewController.swift */; };
+		04A07EDE2982BF0F00E347CD /* MainListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07ED42982BF0F00E347CD /* MainListViewInterface.swift */; };
+		04A07EE12982BF0F00E347CD /* MainListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07ED92982BF0F00E347CD /* MainListRouterInput.swift */; };
+		04A07EE22982BF0F00E347CD /* MainListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07EDA2982BF0F00E347CD /* MainListRouter.swift */; };
+		04A07EE42982D06000E347CD /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07EE32982D06000E347CD /* String+Ext.swift */; };
+		04A07EE92987095F00E347CD /* TaskItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07EE52987095F00E347CD /* TaskItem+CoreDataClass.swift */; };
+		04A07EEA2987095F00E347CD /* ListItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07EE62987095F00E347CD /* ListItem+CoreDataClass.swift */; };
+		04A07EEB2987095F00E347CD /* ListItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07EE72987095F00E347CD /* ListItem+CoreDataProperties.swift */; };
+		04A07EEC2987095F00E347CD /* TaskItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07EE82987095F00E347CD /* TaskItem+CoreDataProperties.swift */; };
+		3F3642D41E6342C104D98D33 /* libPods-DejavooNotesApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A84BE58687D27FDBD9E76C4 /* libPods-DejavooNotesApp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0493640529884E1A001ED997 /* FetchErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchErrors.swift; sourceTree = "<group>"; };
+		04A07CC129812E0100E347CD /* DejavooNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DejavooNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A07CC429812E0100E347CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04A07CC629812E0100E347CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04A07CCE29812E0200E347CD /* DejavooNotesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DejavooNotesApp.xcdatamodel; sourceTree = "<group>"; };
+		04A07CD029812E0700E347CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04A07CD329812E0700E347CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04A07CD529812E0700E347CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A07CE929828C4500E347CD /* TasksAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksAssembly.swift; sourceTree = "<group>"; };
+		04A07CEB29828C4500E347CD /* TasksPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksPresenter.swift; sourceTree = "<group>"; };
+		04A07CED29828C4500E347CD /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		04A07CEE29828C4500E347CD /* TasksViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewInterface.swift; sourceTree = "<group>"; };
+		04A07D012982910100E347CD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		04A07D05298291D700E347CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		04A07D07298291DF00E347CD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		04A07EB629829EBF00E347CD /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		04A07EB92982A0FE00E347CD /* CGFloat+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Ext.swift"; sourceTree = "<group>"; };
+		04A07EBB2982A6EC00E347CD /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		04A07EBE2982A96E00E347CD /* CellsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsDelegate.swift; sourceTree = "<group>"; };
+		04A07ECF2982BF0F00E347CD /* MainListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainListAssembly.swift; sourceTree = "<group>"; };
+		04A07ED12982BF0F00E347CD /* MainListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainListPresenter.swift; sourceTree = "<group>"; };
+		04A07ED32982BF0F00E347CD /* MainListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
+		04A07ED42982BF0F00E347CD /* MainListViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainListViewInterface.swift; sourceTree = "<group>"; };
+		04A07ED92982BF0F00E347CD /* MainListRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainListRouterInput.swift; sourceTree = "<group>"; };
+		04A07EDA2982BF0F00E347CD /* MainListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainListRouter.swift; sourceTree = "<group>"; };
+		04A07EE32982D06000E347CD /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		04A07EE52987095F00E347CD /* TaskItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaskItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		04A07EE62987095F00E347CD /* ListItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ListItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		04A07EE72987095F00E347CD /* ListItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ListItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		04A07EE82987095F00E347CD /* TaskItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaskItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8A84BE58687D27FDBD9E76C4 /* libPods-DejavooNotesApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DejavooNotesApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6836C9457146AAEE6FB1B5 /* Pods-DejavooNotesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DejavooNotesApp.debug.xcconfig"; path = "Target Support Files/Pods-DejavooNotesApp/Pods-DejavooNotesApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B2ACEC71834B9D354539B926 /* Pods-DejavooNotesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DejavooNotesApp.release.xcconfig"; path = "Target Support Files/Pods-DejavooNotesApp/Pods-DejavooNotesApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04A07CBE29812E0100E347CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3642D41E6342C104D98D33 /* libPods-DejavooNotesApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04A07CB829812E0100E347CD = {
+			isa = PBXGroup;
+			children = (
+				04A07CC329812E0100E347CD /* DejavooNotesApp */,
+				04A07CC229812E0100E347CD /* Products */,
+				15A832BCBD2FAB1FD2FDAF21 /* Pods */,
+				2117CE011CD2D6EBB91F157C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04A07CC229812E0100E347CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04A07CC129812E0100E347CD /* DejavooNotesApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04A07CC329812E0100E347CD /* DejavooNotesApp */ = {
+			isa = PBXGroup;
+			children = (
+				04A07CFD29828E9F00E347CD /* Application */,
+				04A07CDB29828BB400E347CD /* Modules */,
+				04A07CFE29828EC400E347CD /* Resources */,
+			);
+			path = DejavooNotesApp;
+			sourceTree = "<group>";
+		};
+		04A07CDB29828BB400E347CD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				04A07ECD2982BF0F00E347CD /* List */,
+				04A07CE729828C4500E347CD /* Tasks */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		04A07CE729828C4500E347CD /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				04A07CE829828C4500E347CD /* Assembly */,
+				04A07CEA29828C4500E347CD /* Presenter */,
+				04A07CEC29828C4500E347CD /* View */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		04A07CE829828C4500E347CD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				04A07CE929828C4500E347CD /* TasksAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		04A07CEA29828C4500E347CD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				04A07CEB29828C4500E347CD /* TasksPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		04A07CEC29828C4500E347CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04A07CED29828C4500E347CD /* TasksViewController.swift */,
+				04A07CEE29828C4500E347CD /* TasksViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04A07CFD29828E9F00E347CD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				04A07CC629812E0100E347CD /* SceneDelegate.swift */,
+				04A07CD229812E0700E347CD /* LaunchScreen.storyboard */,
+				04A07CC429812E0100E347CD /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		04A07CFE29828EC400E347CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04A07EB529829EA100E347CD /* Views */,
+				04A07EBD2982A94A00E347CD /* Helpers */,
+				04A07EB82982A0DA00E347CD /* Extensions */,
+				04A07EB429829A4100E347CD /* DataModels */,
+				04A07CCD29812E0200E347CD /* DejavooNotesApp.xcdatamodeld */,
+				04A07CD029812E0700E347CD /* Assets.xcassets */,
+				04A07CD529812E0700E347CD /* Info.plist */,
+				04A07CFF29828ED900E347CD /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04A07CFF29828ED900E347CD /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				04A07D06298291D700E347CD /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		04A07EB429829A4100E347CD /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				04A07EE62987095F00E347CD /* ListItem+CoreDataClass.swift */,
+				04A07EE72987095F00E347CD /* ListItem+CoreDataProperties.swift */,
+				04A07EE52987095F00E347CD /* TaskItem+CoreDataClass.swift */,
+				04A07EE82987095F00E347CD /* TaskItem+CoreDataProperties.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		04A07EB529829EA100E347CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04A07EB629829EBF00E347CD /* TaskCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04A07EB82982A0DA00E347CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04A07EB92982A0FE00E347CD /* CGFloat+Ext.swift */,
+				04A07EBB2982A6EC00E347CD /* UIColor+Ext.swift */,
+				04A07EE32982D06000E347CD /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04A07EBD2982A94A00E347CD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				04A07EBE2982A96E00E347CD /* CellsDelegate.swift */,
+				0493640529884E1A001ED997 /* FetchErrors.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		04A07ECD2982BF0F00E347CD /* List */ = {
+			isa = PBXGroup;
+			children = (
+				04A07ECE2982BF0F00E347CD /* Assembly */,
+				04A07ED02982BF0F00E347CD /* Presenter */,
+				04A07ED22982BF0F00E347CD /* View */,
+				04A07ED82982BF0F00E347CD /* Router */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		04A07ECE2982BF0F00E347CD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				04A07ECF2982BF0F00E347CD /* MainListAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		04A07ED02982BF0F00E347CD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				04A07ED12982BF0F00E347CD /* MainListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		04A07ED22982BF0F00E347CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04A07ED32982BF0F00E347CD /* MainListViewController.swift */,
+				04A07ED42982BF0F00E347CD /* MainListViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04A07ED82982BF0F00E347CD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				04A07ED92982BF0F00E347CD /* MainListRouterInput.swift */,
+				04A07EDA2982BF0F00E347CD /* MainListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		15A832BCBD2FAB1FD2FDAF21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE6836C9457146AAEE6FB1B5 /* Pods-DejavooNotesApp.debug.xcconfig */,
+				B2ACEC71834B9D354539B926 /* Pods-DejavooNotesApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2117CE011CD2D6EBB91F157C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A84BE58687D27FDBD9E76C4 /* libPods-DejavooNotesApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04A07CC029812E0100E347CD /* DejavooNotesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04A07CD829812E0700E347CD /* Build configuration list for PBXNativeTarget "DejavooNotesApp" */;
+			buildPhases = (
+				7DDA78489BF3E7CD37BCD007 /* [CP] Check Pods Manifest.lock */,
+				04A07CBD29812E0100E347CD /* Sources */,
+				04A07CBE29812E0100E347CD /* Frameworks */,
+				04A07CBF29812E0100E347CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DejavooNotesApp;
+			productName = DejavooNotesApp;
+			productReference = 04A07CC129812E0100E347CD /* DejavooNotesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04A07CB929812E0100E347CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					04A07CC029812E0100E347CD = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 04A07CBC29812E0100E347CD /* Build configuration list for PBXProject "DejavooNotesApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 04A07CB829812E0100E347CD;
+			productRefGroup = 04A07CC229812E0100E347CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04A07CC029812E0100E347CD /* DejavooNotesApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04A07CBF29812E0100E347CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A07CD429812E0700E347CD /* LaunchScreen.storyboard in Resources */,
+				04A07D04298291D700E347CD /* Localizable.strings in Resources */,
+				04A07CD129812E0700E347CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7DDA78489BF3E7CD37BCD007 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DejavooNotesApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04A07CBD29812E0100E347CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A07EBF2982A96E00E347CD /* CellsDelegate.swift in Sources */,
+				04A07EE22982BF0F00E347CD /* MainListRouter.swift in Sources */,
+				04A07EDE2982BF0F00E347CD /* MainListViewInterface.swift in Sources */,
+				04A07EB729829EBF00E347CD /* TaskCell.swift in Sources */,
+				04A07EEA2987095F00E347CD /* ListItem+CoreDataClass.swift in Sources */,
+				04A07EBC2982A6EC00E347CD /* UIColor+Ext.swift in Sources */,
+				04A07EBA2982A0FE00E347CD /* CGFloat+Ext.swift in Sources */,
+				04A07CC529812E0100E347CD /* AppDelegate.swift in Sources */,
+				04A07CCF29812E0200E347CD /* DejavooNotesApp.xcdatamodeld in Sources */,
+				04A07EEB2987095F00E347CD /* ListItem+CoreDataProperties.swift in Sources */,
+				04A07CF729828C4500E347CD /* TasksViewController.swift in Sources */,
+				04A07CF629828C4500E347CD /* TasksPresenter.swift in Sources */,
+				04A07EDB2982BF0F00E347CD /* MainListAssembly.swift in Sources */,
+				04A07EE42982D06000E347CD /* String+Ext.swift in Sources */,
+				04A07EDD2982BF0F00E347CD /* MainListViewController.swift in Sources */,
+				04A07EE12982BF0F00E347CD /* MainListRouterInput.swift in Sources */,
+				04A07EEC2987095F00E347CD /* TaskItem+CoreDataProperties.swift in Sources */,
+				04A07EE92987095F00E347CD /* TaskItem+CoreDataClass.swift in Sources */,
+				04A07CF829828C4500E347CD /* TasksViewInterface.swift in Sources */,
+				04A07CF529828C4500E347CD /* TasksAssembly.swift in Sources */,
+				0493640629884E1A001ED997 /* FetchErrors.swift in Sources */,
+				04A07CC729812E0100E347CD /* SceneDelegate.swift in Sources */,
+				04A07EDC2982BF0F00E347CD /* MainListPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04A07CD229812E0700E347CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04A07CD329812E0700E347CD /* Base */,
+				04A07D012982910100E347CD /* ru */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04A07D06298291D700E347CD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04A07D05298291D700E347CD /* en */,
+				04A07D07298291DF00E347CD /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04A07CD629812E0700E347CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04A07CD729812E0700E347CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04A07CD929812E0700E347CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE6836C9457146AAEE6FB1B5 /* Pods-DejavooNotesApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y68F9BC66J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DejavooNotesApp/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luidasukh.DejavooNotesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		04A07CDA29812E0700E347CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2ACEC71834B9D354539B926 /* Pods-DejavooNotesApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y68F9BC66J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DejavooNotesApp/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luidasukh.DejavooNotesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04A07CBC29812E0100E347CD /* Build configuration list for PBXProject "DejavooNotesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A07CD629812E0700E347CD /* Debug */,
+				04A07CD729812E0700E347CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04A07CD829812E0700E347CD /* Build configuration list for PBXNativeTarget "DejavooNotesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A07CD929812E0700E347CD /* Debug */,
+				04A07CDA29812E0700E347CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04A07CCD29812E0200E347CD /* DejavooNotesApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04A07CCE29812E0200E347CD /* DejavooNotesApp.xcdatamodel */,
+			);
+			currentVersion = 04A07CCE29812E0200E347CD /* DejavooNotesApp.xcdatamodel */;
+			path = DejavooNotesApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04A07CB929812E0100E347CD /* Project object */;
+}
