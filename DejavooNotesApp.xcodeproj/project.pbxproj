@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043B377F299E3DF700641A3F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B377E299E3DF700641A3F /* Test.swift */; };
 		0493640629884E1A001ED997 /* FetchErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0493640529884E1A001ED997 /* FetchErrors.swift */; };
 		04A07CC529812E0100E347CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07CC429812E0100E347CD /* AppDelegate.swift */; };
 		04A07CC729812E0100E347CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07CC629812E0100E347CD /* SceneDelegate.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043B377E299E3DF700641A3F /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		0493640529884E1A001ED997 /* FetchErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchErrors.swift; sourceTree = "<group>"; };
 		04A07CC129812E0100E347CD /* DejavooNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DejavooNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A07CC429812E0100E347CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043B377D299E3DE500641A3F /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				043B377E299E3DF700641A3F /* Test.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		04A07CB829812E0100E347CD = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 		04A07CDB29828BB400E347CD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				043B377D299E3DE500641A3F /* Test */,
 				04A07ECD2982BF0F00E347CD /* List */,
 				04A07CE729828C4500E347CD /* Tasks */,
 			);
@@ -392,6 +403,7 @@
 				04A07EDE2982BF0F00E347CD /* MainListViewInterface.swift in Sources */,
 				04A07EB729829EBF00E347CD /* TaskCell.swift in Sources */,
 				04A07EEA2987095F00E347CD /* ListItem+CoreDataClass.swift in Sources */,
+				043B377F299E3DF700641A3F /* Test.swift in Sources */,
 				04A07EBC2982A6EC00E347CD /* UIColor+Ext.swift in Sources */,
 				04A07EBA2982A0FE00E347CD /* CGFloat+Ext.swift in Sources */,
 				04A07CC529812E0100E347CD /* AppDelegate.swift in Sources */,
